@@ -1,0 +1,27 @@
+.list-box{
+  padding: 15px;
+  margin-bottom: 5px;
+}
+.box-block{
+  display: flex;
+  align-items: center;
+}
+image{
+  width: 100px;
+  height: 150px;
+}
+.list-box-right{
+  margin-left: 10rpx;
+  flex: 1;
+}
+.titleRating{
+  display: flex;
+  justify-content: space-between;
+}
+#title-text{
+  font-weight: bold;
+}
+#casts{
+  color: #ccc;
+  font-size: 20rpx;
+}

@@ -1,0 +1,17 @@
+<navigator url="/pages/movie/movie?id={{item.id}}" wx:for='{{list}}' wx:key='title' class="list-box">
+  <view class="box-block">
+    <image src="{{item.images.small}}"></image>
+    <!-- 电影描述  导演等 -->
+    <view class="list-box-right">
+      <!-- 标题 评分-->
+      <view class="titleRating">
+        <text id="title-text">{{item.title}}</text>
+        <text>{{item.rating.average}}</text>
+      </view>
+      <!-- 导演 -->
+      <view wx:for='{{item.casts}}' wx:key='name_en' id="casts">{{item.name_en}}</view>
+    </view>
+
+
+  </view>
+</navigator>

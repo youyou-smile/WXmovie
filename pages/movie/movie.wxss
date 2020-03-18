@@ -1,0 +1,12 @@
+#top,#center,#bottom{
+  padding: 0 15px 10px;
+  margin-bottom: 20px;
+}
+#title-text,.bottom-title{
+  font-weight: bold;
+  text-align: center;
+}
+#center,.summary{
+  line-height: 28px;
+  color: #999;
+}

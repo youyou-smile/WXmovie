@@ -1,0 +1,20 @@
+<!-- top -->
+<view id="top">
+  <image src="{{movie.images.small}}"></image>
+  <view id="title-text">{{movie.original_title}}</view>
+</view>
+
+<!-- center -->
+<view id="center">
+  <view>评分:{{movie.rating.average}}</view>
+  <view wx:for='{{movie.directors}}'>导演{{item.name_en}}</view>    <!--导演-->
+  <block>主演
+    <view wx:for='{{movie.casts}}'> {{item.name_en}} </view>
+  </block>
+</view>
+
+<!-- 简介 -->
+<view id="bottom">
+  <text class="bottom-title">简介</text>
+  <view class="summary"> {{movie.summary}} </view>
+</view>

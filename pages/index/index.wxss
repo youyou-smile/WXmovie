@@ -1,0 +1,31 @@
+.banner {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.list-box {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  padding: 20px;
+  margin: 14px;
+  background: #eee;
+}
+
+image {
+  width: 100%;
+}
+#title{
+  line-height: 26px;
+  margin: 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.subTitle {
+  font-size: 14px;
+  color: #999;
+}

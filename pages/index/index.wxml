@@ -1,0 +1,31 @@
+<!-- 轮播 -->
+<view class="page-section page-section-spacing swiper banner">
+  <swiper indicator-dots="{{banner.indicatorDots}}" autoplay="{{banner.autoplay}}" interval="{{banner.interval}}" duration="{{banner.duration}}">
+    <block wx:for="{{banner.imglist}}" wx:key="item">
+      <swiper-item>
+        <view class="swiper-item {{item}}">
+          <image src="{{item}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 豆瓣电影,源码出品 -->
+<view id="title">
+  <view class="title"> {{title.title}} </view>
+  <view class="subTitle"> {{title.subTitle}} </view>
+</view>
+
+<!-- 列表所有项 -->
+<view id='list'>
+  <!-- 列表项 -->
+  <navigator url="/pages/list/list?index={{index}}" wx:for='{{list}}' wx:key='name'>
+    <view class="list-box">
+      <text> {{item.name}} </text>
+      <text>></text>
+    </view>
+  </navigator>
+
+
+</view>
